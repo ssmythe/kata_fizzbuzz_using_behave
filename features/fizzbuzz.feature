@@ -53,3 +53,8 @@ Feature: FizzBuzz
     Given the number "15"
     When we run do_fizz with the number
     Then we expect back "FizzBuzz"
+
+  Scenario: foo = TypeError Exception
+    Given the string "foo"
+    When we run do_fizz with the string
+    Then we expect a TypeError exception
